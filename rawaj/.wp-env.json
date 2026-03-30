@@ -1,0 +1,34 @@
+{
+  "corePort": 8888,
+  "testsPort": 8889,
+  "phpVersion": "8.1",
+  "plugins": [
+    "woocommerce"
+  ],
+  "themes": [
+    "."
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "woocommerce",
+        "query-monitor"
+      ]
+    },
+    "tests": {
+      "plugins": [
+        "woocommerce"
+      ]
+    }
+  },
+  "config": {
+    "WP_DEBUG": true,
+    "WP_DEBUG_LOG": true,
+    "WP_DEBUG_DISPLAY": false,
+    "SCRIPT_DEBUG": true,
+    "FS_METHOD": "direct"
+  },
+  "mappings": {
+    "wp-content/themes/rawaj": "."
+  }
+}

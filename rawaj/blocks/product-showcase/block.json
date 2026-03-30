@@ -1,0 +1,72 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rawaj/product-showcase",
+  "version": "1.0.0",
+  "title": "Product Showcase",
+  "category": "rawaj-blocks",
+  "description": "A showcase block for displaying featured products with customizable title, description, and button.",
+  "keywords": ["product", "showcase", "featured", "woocommerce", "rawaj"],
+  "textdomain": "rawaj",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Featured Products"
+    },
+    "description": {
+      "type": "string",
+      "default": "Discover our curated selection of premium products."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "View All Products"
+    },
+    "buttonLink": {
+      "type": "string",
+      "default": "/shop/"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--bg-alt)"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--text)"
+    },
+    "accentColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--accent)"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  },
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "dark",
+      "label": "Dark Mode"
+    }
+  ],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor-style.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}

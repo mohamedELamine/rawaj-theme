@@ -1,0 +1,337 @@
+/*
+Theme Name: Rawaj
+Theme URI: https://example.com/rawaj
+Author: Rawaj Team
+Author URI: https://example.com
+Description: An Arabic-first WooCommerce FSE WordPress theme with a foundational design token system. Features RTL support, Light/Dark mode, and professional typography using Cairo and Tajawal fonts.
+Version: 1.0.0
+Requires at least: 6.4
+Tested up to: 6.7
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: rawaj
+Tags: one-column, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, rtl-language-support, theme-options, threaded-comments, translation-ready, wide-blocks, block-patterns, block-styles, woocommerce
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;600;700&display=swap');
+
+/* Light Mode (Default) */
+:root {
+  --wp--custom--line-height--tight: 1.2;
+  --wp--custom--line-height--normal: 1.5;
+  --wp--custom--line-height--relaxed: 1.75;
+  
+  /* Light Mode Colors */
+  --rawaj--color--primary: #1a1a1a;
+  --rawaj--color--primary-light: #2d2d2d;
+  --rawaj--color--accent: #c4a572;
+  --rawaj--color--accent-dark: #8b7355;
+  --rawaj--color--bg: #f8f6f3;
+  --rawaj--color--bg-alt: #faf8f5;
+  --rawaj--color--text: #2a2a2a;
+  --rawaj--color--text-light: #666666;
+  --rawaj--color--border: #e8e6e3;
+  --rawaj--color--success: #4caf50;
+  --rawaj--color--warning: #ff9800;
+  --rawaj--color--error: #f44336;
+  --rawaj--color--info: #2196f3;
+  --rawaj--color--white: #ffffff;
+}
+
+/* Dark Mode (System Preference) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Mode Color Overrides */
+    --wp--preset--color--primary: #ffffff;
+    --wp--preset--color--primary-light: #f0f0f0;
+    --wp--preset--color--bg: #1a1a1a;
+    --wp--preset--color--bg-alt: #2d2d2d;
+    --wp--preset--color--text: #ffffff;
+    --wp--preset--color--text-light: #999999;
+    --wp--preset--color--border: #444444;
+    --wp--preset--color--success: #81c784;
+    --wp--preset--color--warning: #ffb74d;
+    --wp--preset--color--error: #ef5350;
+    --wp--preset--color--info: #64b5f6;
+    
+    /* Rawaj Dark Mode Colors */
+    --rawaj--color--primary: #ffffff;
+    --rawaj--color--primary-light: #f0f0f0;
+    --rawaj--color--accent: #c4a572;
+    --rawaj--color--accent-dark: #e8d4a8;
+    --rawaj--color--bg: #1a1a1a;
+    --rawaj--color--bg-alt: #2d2d2d;
+    --rawaj--color--text: #ffffff;
+    --rawaj--color--text-light: #999999;
+    --rawaj--color--border: #444444;
+    --rawaj--color--success: #81c784;
+    --rawaj--color--warning: #ffb74d;
+    --rawaj--color--error: #ef5350;
+    --rawaj--color--info: #64b5f6;
+    --rawaj--color--white: #1a1a1a;
+  }
+  
+  /* Dark Mode Body Background */
+  body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  /* Dark Mode Card Backgrounds */
+  .wp-block-column,
+  .wp-block-group {
+    background-color: #2d2d2d;
+  }
+  
+  /* Dark Mode Form Inputs */
+  input,
+  textarea,
+  select {
+    background-color: #2d2d2d;
+    border-color: #444444;
+    color: #ffffff;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: var(--wp--preset--color--accent);
+    outline-color: var(--wp--preset--color--accent);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tajawal', sans-serif;
+  font-size: var(--wp--preset--font-size--medium, 16px);
+  line-height: var(--wp--custom--line-height--normal, 1.5);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--wp--preset--color--bg, #f8f6f3);
+  color: var(--wp--preset--color--text, #2a2a2a);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cairo', serif;
+  font-weight: 900;
+  line-height: var(--wp--custom--line-height--tight, 1.2);
+  margin: 0;
+  color: var(--wp--preset--color--text, #2a2a2a);
+}
+
+a {
+  color: var(--wp--preset--color--accent, #c4a572);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--wp--preset--color--accent-dark, #8b7355);
+}
+
+a:focus {
+  outline: 2px solid var(--wp--preset--color--accent);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* RTL Support */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl .wp-block-button .wp-block-button__link {
+  font-family: 'Tajawal', sans-serif;
+}
+
+/* Button Styles */
+.wp-block-button__link {
+  background-color: var(--wp--preset--color--accent, #c4a572);
+  color: var(--wp--preset--color--primary, #1a1a1a);
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.wp-block-button__link:hover {
+  background-color: var(--wp--preset--color--accent-dark, #8b7355);
+  transform: translateY(-2px);
+}
+
+.wp-block-button__link:focus {
+  outline: 2px solid var(--wp--preset--color--accent);
+  outline-offset: 2px;
+}
+
+.wp-block-button__link:active {
+  transform: translateY(0);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--wp--preset--color--accent, #c4a572);
+  color: var(--wp--preset--color--primary, #1a1a1a);
+}
+
+/* Focus Visible */
+:focus-visible {
+  outline: 2px solid var(--wp--preset--color--accent);
+  outline-offset: 2px;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--white);
+  padding: var(--wp--preset--spacing--small);
+  z-index: 100000;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Card Styles */
+.wp-block-column {
+  border: 1px solid var(--wp--preset--color--border);
+  border-radius: var(--wp--preset--border-radius--medium, 8px);
+  background-color: var(--wp--preset--color--bg, #f8f6f3);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.wp-block-column:hover {
+  border-color: var(--wp--preset--color--accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Group Block */
+.wp-block-group {
+  background-color: var(--wp--preset--color--bg-alt, #faf8f5);
+}
+
+/* Form Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+textarea,
+select {
+  font-family: var(--wp--preset--font-family--body, 'Tajawal', sans-serif);
+  font-size: var(--wp--preset--font-size--medium, 16px);
+  padding: var(--wp--preset--spacing--small, 8px) var(--wp--preset--spacing--medium, 16px);
+  border: 1px solid var(--wp--preset--color--border, #e8e6e3);
+  border-radius: var(--wp--preset--border-radius--small, 4px);
+  background-color: var(--wp--preset--color--white, #ffffff);
+  color: var(--wp--preset--color--text, #2a2a2a);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--wp--preset--color--accent);
+  box-shadow: 0 0 0 3px rgba(196, 165, 114, 0.2);
+  outline: none;
+}
+
+/* WooCommerce Styles */
+.woocommerce-product-gallery {
+  border-radius: var(--wp--preset--border-radius--medium, 8px);
+  overflow: hidden;
+}
+
+.woocommerce-tabs {
+  border-bottom: 1px solid var(--wp--preset--color--border);
+}
+
+.woocommerce-tabs ul.tabs {
+  border-bottom: none;
+}
+
+.woocommerce-tabs ul.tabs li {
+  border: 1px solid var(--wp--preset--color--border);
+  border-bottom: none;
+}
+
+.woocommerce-tabs ul.tabs li.active {
+  border-color: var(--wp--preset--color--accent);
+  background-color: var(--wp--preset--color--bg);
+}
+
+.price,
+.woocommerce-Price-amount {
+  color: var(--wp--preset--color--accent, #c4a572);
+  font-weight: 700;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  body {
+    font-size: var(--wp--preset--font-size--small, 14px);
+  }
+  
+  h1 {
+    font-size: var(--wp--preset--font-size--3x-large, 36px);
+  }
+  
+  h2 {
+    font-size: var(--wp--preset--font-size--2x-large, 28px);
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .wp-block-button__link {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  a {
+    color: #000000;
+    text-decoration: underline;
+  }
+}

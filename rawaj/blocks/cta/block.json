@@ -1,0 +1,80 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rawaj/cta",
+  "version": "1.0.0",
+  "title": "Call-to-Action",
+  "category": "rawaj-blocks",
+  "description": "A call-to-action block with headline, subheadline, and customizable button.",
+  "keywords": ["cta", "call to action", "button", "rawaj"],
+  "textdomain": "rawaj",
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "default": "Ready to Get Started?"
+    },
+    "subheadline": {
+      "type": "string",
+      "default": "Join thousands of satisfied customers and experience premium quality."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Get Started"
+    },
+    "buttonLink": {
+      "type": "string",
+      "default": "/contact/"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--primary)"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--white)"
+    },
+    "buttonColor": {
+      "type": "string",
+      "default": "var(--wp--preset--color--accent)"
+    },
+    "align": {
+      "type": "string",
+      "default": "center"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  },
+  "styles": [
+    {
+      "name": "default",
+      "label": "Default",
+      "isDefault": true
+    },
+    {
+      "name": "outlined",
+      "label": "Outlined Button"
+    },
+    {
+      "name": "dark",
+      "label": "Dark Mode"
+    }
+  ],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor-style.css",
+  "style": "file:./style.css",
+  "render": "file:./render.php"
+}

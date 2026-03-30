@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd"
+         bootstrap="tests/bootstrap.php"
+         colors="true"
+         cacheDirectory=".phpunit.cache"
+         executionOrder="depends,defects"
+         requireCoverageMetadata="false"
+         beStrictAboutCoverageMetadata="false"
+         beStrictAboutOutputDuringTests="true"
+         displayDetailsOnPhpunitDeprecations="true"
+         displayDetailsOnTestsThatTriggerDeprecations="true"
+         displayDetailsOnTestsThatTriggerErrors="true"
+         displayDetailsOnTestsThatTriggerNotices="true"
+         displayDetailsOnTestsThatTriggerWarnings="true">
+  <testsuites>
+    <testsuite name="unit">
+      <directory>tests/php/unit</directory>
+    </testsuite>
+    <testsuite name="integration">
+      <directory>tests/php/integration</directory>
+    </testsuite>
+  </testsuites>
+  <source>
+    <include>
+      <directory suffix=".php">./</directory>
+    </include>
+    <exclude>
+      <directory suffix=".php">./tests</directory>
+      <directory suffix=".php">./node_modules</directory>
+      <directory suffix=".php">./vendor</directory>
+    </exclude>
+  </source>
+  <php>
+    <env name="WP_TESTS_SKIP_INSTALL" value="0"/>
+    <env name="WP_TESTS_FORCE_TESTS_DIR" value="../../../wp-tests-config.php"/>
+    <const name="WP_DEBUG" value="true"/>
+    <const name="WP_DEBUG_DISPLAY" value="false"/>
+    <const name="WP_USE_THEMES" value="true"/>
+  </php>
+</phpunit>
