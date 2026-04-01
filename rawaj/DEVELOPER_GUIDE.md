@@ -58,7 +58,7 @@ var(--wp--preset--color--info)        /* #64b5f6 (lighter blue) */
 
 ```css
 /* Headings */
-var(--wp--preset--font-family--heading)  /* Cairo (serif) - for H1, H2, H3 */
+var(--wp--preset--font-family--heading)  /* Cairo (sans-serif) - for H1, H2, H3 */
 
 /* Body Text */
 var(--wp--preset--font-family--body)     /* Tajawal (sans-serif) - for p, span */

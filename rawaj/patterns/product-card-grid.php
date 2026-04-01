@@ -12,8 +12,8 @@ if (!defined('ABSPATH')) {
 ?>
 <!-- wp:columns {"style":{"spacing":{"gap":"var(--wp--preset--spacing--large)","margin":{"top":"var(--wp--preset--spacing--large)","bottom":"var(--wp--preset--spacing--large)"}}},"className":"product-card-grid"} -->
 <div class="wp-block-columns product-card-grid" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large);gap:var(--wp--preset--spacing--large)">
-    <!-- wp:column {"style":{"border":{"color":"var(--wp--preset--color--border)","width":"1px","radius":"var(--wp--preset--spacing--medium)"},"spacing":{"padding":{"top":"var(--wp--preset--spacing--large)","bottom":"var(--wp--preset--spacing--large)","left":"var(--wp--preset--spacing--large)","right":"var(--wp--preset--spacing--large)"}}}} -->
-    <div class="wp-block-column" style="border-color:var(--wp--preset--color--border);border-width:1px;border-radius:var(--wp--preset--spacing--medium);padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)">
+    <!-- wp:column {"style":{"border":{"color":"var(--wp--preset--color--border)","width":"1px","radius":"var(--wp--preset--border-radius--medium)"},"spacing":{"padding":{"top":"var(--wp--preset--spacing--large)","bottom":"var(--wp--preset--spacing--large)","left":"var(--wp--preset--spacing--large)","right":"var(--wp--preset--spacing--large)"}}}} -->
+    <div class="wp-block-column" style="border-color:var(--wp--preset--color--border);border-width:1px;border-radius:var(--wp--preset--border-radius--medium);padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)">
         <!-- wp:image {"sizeSlug":"large"} -->
         <figure class="wp-block-image size-large">
             <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/placeholder.jpg'); ?>" alt="<?php echo esc_attr__('Product Image', 'rawaj'); ?>" />

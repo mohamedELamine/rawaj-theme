@@ -51,11 +51,11 @@ All colors, fonts, and spacing are managed through `theme.json` design tokens. N
 - **Semantic**: success (#4caf50), error (#f44336), warning (#ff9800), info (#2196f3)
 
 ### Typography (2 + 8)
-- **Cairo** (serif) — headings
+- **Cairo** (sans-serif) — headings
 - **Tajawal** (sans-serif) — body text
-- **Sizes**: 12px, 14px, 16px, 18px, 20px, 24px, 32px, 56px (1.25 modular ratio)
+- **Sizes**: 12px, 14px, 16px, 18px, 24px, 28px, 36px, 56px (1.25 modular ratio)
 
-### Spacing (8)
+### Spacing (7)
 - 4px, 8px, 16px, 24px, 32px, 48px, 64px (4px grid)
 
 ## Dark Mode

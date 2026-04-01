@@ -120,12 +120,12 @@ function rawaj_register_blockPatterns()
 
 function rawaj_get_hero_pattern()
 {
-    return '<!-- wp:cover {"url":"","hasParallax":false,"dimRatio":0,"overlayColor":"primary","isUserOverlayColor":true,"minHeight":500,"minHeightUnit":"px","align":"full","style":{"spacing":{"padding":{"top":"var(--wp--preset--spacing--3x-large)","bottom":"var(--wp--preset--spacing--3x-large)","left":"var(--wp--preset--spacing--large)","right":"var(--wp--preset--spacing--large)"}}},"layout":{"type":"constrained"},"textColor":"white"} --><div class="wp-block-cover alignfull" style="min-height:500px;padding-top:var(--wp--preset--spacing--3x-large);padding-bottom:var(--wp--preset--spacing--3x-large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontSize":"var(--wp--preset--font-size--5x-large)"}}} --><h1 class="wp-block-heading has-text-align-center" style="font-size:var(--wp--preset--font-size--5x-large)">' . esc_html__('Welcome to Rawaj', 'rawaj') . '</h1><!-- /wp:heading --><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"var(--wp--preset--font-size--extra-large)"}}} --><p class="has-text-align-center" style="font-size:var(--wp--preset--font-size--extra-large)">' . esc_html__('A premium Arabic-first WooCommerce theme.', 'rawaj') . '</p><!-- /wp:paragraph --><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} --><div class="wp-block-buttons"><!-- wp:button {"style":{"spacing":{"padding":{"top":"var(--wp--preset--spacing--medium)","bottom":"var(--wp--preset--spacing--medium)","left":"var(--wp--preset--spacing--large)","right":"var(--wp--preset--spacing--large)"}}}} --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button">' . esc_html__('Shop Now', 'rawaj') . '</a></div><!-- /wp:button --></div><!-- /wp:buttons --></div></div><!-- /wp:cover -->';
+    return '<!-- wp:cover {"url":"","hasParallax":false,"dimRatio":0,"overlayColor":"primary","isUserOverlayColor":true,"minHeight":500,"minHeightUnit":"px","align":"full","style":{"border":{"radius":"var(--wp--preset--border-radius--medium)"},"spacing":{"padding":{"top":"var(--wp--preset--spacing--3x-large)","bottom":"var(--wp--preset--spacing--3x-large)","left":"var(--wp--preset--spacing--large)","right":"var(--wp--preset--spacing--large)"}}},"layout":{"type":"constrained"},"textColor":"white"} --><div class="wp-block-cover alignfull" style="min-height:500px;border-radius:var(--wp--preset--border-radius--medium);padding-top:var(--wp--preset--spacing--3x-large);padding-bottom:var(--wp--preset--spacing--3x-large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontSize":"var(--wp--preset--font-size--5x-large)"}}} --><h1 class="wp-block-heading has-text-align-center" style="font-size:var(--wp--preset--font-size--5x-large)">' . esc_html__('Welcome to Rawaj', 'rawaj') . '</h1><!-- /wp:heading --><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"var(--wp--preset--font-size--extra-large)"}}} --><p class="has-text-align-center" style="font-size:var(--wp--preset--font-size--extra-large)">' . esc_html__('A premium Arabic-first WooCommerce theme.', 'rawaj') . '</p><!-- /wp:paragraph --><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} --><div class="wp-block-buttons"><!-- wp:button {"style":{"spacing":{"padding":{"top":"var(--wp--preset--spacing--medium)","bottom":"var(--wp--preset--spacing--medium)","left":"var(--wp--preset--spacing--large)","right":"var(--wp--preset--spacing--large)"}}}} --><div class="wp-block-button"><a class="wp-block-button__link wp-element-button">' . esc_html__('Shop Now', 'rawaj') . '</a></div><!-- /wp:button --></div><!-- /wp:buttons --></div></div><!-- /wp:cover -->';
 }
 
 function rawaj_get_product_card_pattern()
 {
-    return '<!-- wp:columns {"style":{"spacing":{"gap":"var(--wp--preset--spacing--large)","margin":{"top":"var(--wp--preset--spacing--large)","bottom":"var(--wp--preset--spacing--large)"}}},"className":"product-card-grid"} --><div class="wp-block-columns product-card-grid" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large);gap:var(--wp--preset--spacing--large)"><!-- wp:column {"style":{"border":{"color":"var(--wp--preset--color--border)","width":"1px","radius":"var(--wp--preset--spacing--medium)"},"spacing":{"padding":{"top":"var(--wp--preset--spacing--large)","bottom":"var(--wp--preset--spacing--large)","left":"var(--wp--preset--spacing--large)","right":"var(--wp--preset--spacing--large)"}}}} --><div class="wp-block-column" style="border-color:var(--wp--preset--color--border);border-width:1px;border-radius:var(--wp--preset--spacing--medium);padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var(--wp--preset--font-size--large)"}}} --><h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large)">' . esc_html__('Product Title', 'rawaj') . '</h3><!-- /wp:heading --><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var(--wp--preset--color--accent)"}}},"typography":{"fontSize":"var(--wp--preset--font-size--medium)"}},"textColor":"accent"} --><p class="has-accent-color has-text-color" style="font-size:var(--wp--preset--font-size--medium)">$99.00</p><!-- /wp:paragraph --></div><!-- /wp:column --></div><!-- /wp:columns -->';
+    return '<!-- wp:columns {"style":{"spacing":{"gap":"var(--wp--preset--spacing--large)","margin":{"top":"var(--wp--preset--spacing--large)","bottom":"var(--wp--preset--spacing--large)"}}},"className":"product-card-grid"} --><div class="wp-block-columns product-card-grid" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large);gap:var(--wp--preset--spacing--large)"><!-- wp:column {"style":{"border":{"color":"var(--wp--preset--color--border)","width":"1px","radius":"var(--wp--preset--border-radius--medium)"},"spacing":{"padding":{"top":"var(--wp--preset--spacing--large)","bottom":"var(--wp--preset--spacing--large)","left":"var(--wp--preset--spacing--large)","right":"var(--wp--preset--spacing--large)"}}}} --><div class="wp-block-column" style="border-color:var(--wp--preset--color--border);border-width:1px;border-radius:var(--wp--preset--spacing--medium);padding-top:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large)"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var(--wp--preset--font-size--large)"}}} --><h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large)">' . esc_html__('Product Title', 'rawaj') . '</h3><!-- /wp:heading --><!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var(--wp--preset--color--accent)"}}},"typography":{"fontSize":"var(--wp--preset--font-size--medium)"}},"textColor":"accent"} --><p class="has-accent-color has-text-color" style="font-size:var(--wp--preset--font-size--medium)">$99.00</p><!-- /wp:paragraph --></div><!-- /wp:column --></div><!-- /wp:columns -->';
 }
 
 add_filter('block_categories_all', 'rawaj_block_categories');
@@ -220,14 +220,37 @@ function rawaj_get_color_palette()
 add_filter('render_block', 'rawaj_rtl_support', 10, 2);
 function rawaj_rtl_support($block_content, $block)
 {
-    if (is_rtl()) {
-        $block_content = str_replace('text-align: left', 'text-align: right', $block_content);
-        $block_content = str_replace('margin-left:', 'margin-inline-start:', $block_content);
-        $block_content = str_replace('margin-right:', 'margin-inline-end:', $block_content);
-        $block_content = str_replace('padding-left:', 'padding-inline-start:', $block_content);
-        $block_content = str_replace('padding-right:', 'padding-inline-end:', $block_content);
+    if (!is_rtl()) {
+        return $block_content;
     }
-    return $block_content;
+
+    // Skip blocks that already use CSS logical properties to avoid double-conversion.
+    $already_logical = (
+        strpos($block_content, 'margin-inline-start') !== false ||
+        strpos($block_content, 'margin-inline-end')   !== false ||
+        strpos($block_content, 'padding-inline-start') !== false ||
+        strpos($block_content, 'padding-inline-end')   !== false
+    );
+
+    if ($already_logical) {
+        return $block_content;
+    }
+
+    // Convert physical CSS properties to logical equivalents for RTL.
+    // We use preg_replace to target specific CSS property definitions in style attributes.
+    $replacements = array(
+        '/text-align\s*:\s*left(?=[;"])/i'   => 'text-align: right',
+        '/margin-left\s*:\s*(?=[^;"])/i'     => 'margin-inline-start:',
+        '/margin-right\s*:\s*(?=[^;"])/i'    => 'margin-inline-end:',
+        '/padding-left\s*:\s*(?=[^;"])/i'    => 'padding-inline-start:',
+        '/padding-right\s*:\s*(?=[^;"])/i'   => 'padding-inline-end:',
+        '/border-left\s*:\s*(?=[^;"])/i'     => 'border-inline-start:',
+        '/border-right\s*:\s*(?=[^;"])/i'    => 'border-inline-end:',
+        '/left\s*:\s*(?=[^;"])/i'            => 'inset-inline-start:',
+        '/right\s*:\s*(?=[^;"])/i'           => 'inset-inline-end:',
+    );
+
+    return preg_replace(array_keys($replacements), array_values($replacements), $block_content);
 }
 
 add_action('init', 'rawaj_register_blocks');

@@ -4,13 +4,13 @@
 
 ### v1.0 — Foundational Theme (2026-04-07)
 
-**Status**: In Development
+**Status**: Released ✅
 
 #### Features
 - ✅ 14-color design system
 - ✅ 2 font families (Cairo, Tajawal)
 - ✅ 8 font size tokens
-- ✅ 8 spacing tokens
+- ✅ 7 spacing tokens
 - ✅ Light/Dark mode support
 - ✅ RTL (Arabic) support
 - ✅ WooCommerce integration
@@ -244,6 +244,6 @@ Not applicable (v1.0 is initial release).
 
 ---
 
-**Last Updated**: 2026-03-29
-**Current Version**: v1.0 (In Development)
+**Last Updated**: 2026-03-31
+**Current Version**: v1.0 (Released 2026-04-07)
 **Next Release**: v1.1 (2026-06-???)

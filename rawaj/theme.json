@@ -85,7 +85,7 @@
         {
           "name": "Heading",
           "slug": "heading",
-          "fontFamily": "'Cairo', serif"
+          "fontFamily": "'Cairo', sans-serif"
         },
         {
           "name": "Body",
