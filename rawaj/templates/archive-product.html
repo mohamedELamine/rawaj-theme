@@ -1,0 +1,36 @@
+<!-- wp:template-part {"slug":"header","theme":"rawaj"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"},"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--large)","padding":{"top":"var(--wp--preset--spacing--large)","bottom":"var(--wp--preset--spacing--3x-large)","left":"var(--wp--preset--spacing--large)","right":"var(--wp--preset--spacing--large)"}}}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--3x-large);padding-left:var(--wp--preset--spacing--large)">
+	<!-- wp:query-title {"showPrefix":false} /-->
+	<!-- wp:term-description /-->
+
+	<!-- wp:query {"query":{"perPage":12,"pages":0,"offset":0,"postType":"product","order":"desc","orderBy":"date","inherit":true},"displayLayout":{"type":"flex","columns":3},"layout":{"type":"constrained"}} -->
+	<div class="wp-block-query">
+		<!-- wp:post-template -->
+		<!-- wp:group {"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--medium)","padding":{"top":"var(--wp--preset--spacing--medium)","bottom":"var(--wp--preset--spacing--medium)","left":"var(--wp--preset--spacing--medium)","right":"var(--wp--preset--spacing--medium)"}},"border":{"color":"var(--wp--preset--color--border)","width":"1px","radius":"8px"}},"layout":{"type":"constrained"}} -->
+		<div class="wp-block-group" style="border-color:var(--wp--preset--color--border);border-width:1px;border-radius:8px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
+			<!-- wp:post-featured-image {"isLink":true} /-->
+			<!-- wp:post-title {"isLink":true,"level":3} /-->
+			<!-- wp:read-more {"content":"عرض المنتج"} /-->
+		</div>
+		<!-- /wp:group -->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+		<!-- wp:query-pagination-previous {"label":"السابق"} /-->
+		<!-- wp:query-pagination-numbers /-->
+		<!-- wp:query-pagination-next {"label":"التالي"} /-->
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:query-no-results -->
+		<!-- wp:paragraph -->
+		<p>لا توجد منتجات متاحة في هذا القسم حاليًا.</p>
+		<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","theme":"rawaj"} /-->
